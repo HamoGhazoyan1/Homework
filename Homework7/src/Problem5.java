@@ -7,8 +7,9 @@ public class Problem5 {
         int a = scanner.nextInt();
         System.out.println(countZeros(a));
     }
-    static int countZeros (int a1) {
+    static boolean countZeros (int a1) {
         int count = 0;
+        boolean even = false;
         if(a1 == 0){
             count = 1;
         }else{
@@ -20,7 +21,9 @@ public class Problem5 {
                 a1 = (a1 - x) / 10;
             }
         }
-
-        return count;
+        if(count % 2 == 0){
+            even = true;
+        }
+        return even;
     }
 }
