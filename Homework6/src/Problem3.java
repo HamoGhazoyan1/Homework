@@ -13,6 +13,7 @@ public class Problem3 {
             }
             else{
                 pal=false;
+                break;
             }
         }
         if(pal){
