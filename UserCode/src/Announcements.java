@@ -13,10 +13,12 @@ public class Announcements {
     }
 
     public ArrayList<String> getReaders() {
+
         return readers;
     }
 
     public void addReaders(String reader) {
+
         this.readers.add(reader);
     }
     public boolean newAnnouncement(Announcements announcement, String username){

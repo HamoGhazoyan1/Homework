@@ -4,11 +4,17 @@ public class User {
     private String username;
     private String password;
     private ArrayList<Message> messages;
+    private Friend friends;
+
+    public Friend userFriends() {
+        return friends;
+    }
 
     public User(String username, String password) {
         this.username = username;
         this.password = password;
         messages = new ArrayList<>();
+        friends = new Friend();
     }
 
     public String getUsername() {
@@ -34,4 +40,5 @@ public class User {
     public void setMessages(ArrayList<Message> messages) {
         this.messages = messages;
     }
+
 }
